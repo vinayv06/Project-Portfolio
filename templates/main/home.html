@@ -1,0 +1,128 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+Home | Vinay V
+{% endblock %}
+
+
+{% block content %}
+
+<section class="hero">
+
+    <!-- LEFT SIDE -->
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            HELLO, I'M
+        </p>
+
+        <h1>
+            Vinay V
+        </h1>
+
+        <h2>
+            Computer Science & Engineering Graduate
+        </h2>
+
+        <p class="hero-description">
+            Computer Science and Engineering graduate with
+            knowledge of Python, SQL, and web development.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="{% url 'projects' %}"
+               class="btn primary-btn">
+                View Projects
+            </a>
+
+            <a href="{% url 'contact' %}"
+               class="btn secondary-btn">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT SIDE - PROFILE PHOTO -->
+
+    <div class="hero-image">
+
+        <div class="image-circle">
+
+            <img
+                src="{% static 'main/images/profile.jpg' %}"
+                alt="Vinay V"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QUICK INFORMATION -->
+
+<section class="quick-section">
+
+    <h2>
+        What I Do
+    </h2>
+
+
+    <div class="quick-grid">
+
+
+        <div class="quick-card">
+
+            <h3>
+                Python
+            </h3>
+
+            <p>
+                Core Python and Advanced Python.
+            </p>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <h3>
+                Web Development
+            </h3>
+
+            <p>
+                HTML, CSS, JavaScript and Django basics.
+            </p>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <h3>
+                Problem Solving
+            </h3>
+
+            <p>
+                50+ coding problems and DSA practice.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+{% endblock %}
